@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTitle" parent="@style/CustomTitleGeneric">
+        <item name="android:textSize">24.0dip</item>
+    </style>
+    <style name="HighlightColor" parent="@style/DefaultPickerColor">
+        <item name="android:padding">15.0dip</item>
+        <item name="android:onClick">setHighlightColor</item>
+    </style>
+    <style name="HighlightPenSelector" parent="@style/HighlightPenSelectorGeneric">
+        <item name="android:paddingLeft">10.0dip</item>
+    </style>
+    <style name="PanelCloseButtonHighlight" parent="@style/PanelCloseButtonHighlightGeneric">
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+    </style>
+    <style name="HighlightColorSelected" parent="@style/HighlightColorSelectedGeneric">
+        <item name="android:layout_width">22.0dip</item>
+        <item name="android:layout_marginRight">15.0dip</item>
+    </style>
+    <style name="HighlightBar" parent="@style/HighlightBarGeneric">
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">25.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="CustomToast">
+        <item name="android:layout_width">400.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="GeneralListItem" parent="@style/GeneralListItemGeneric">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="TreeViewListItemTitle" parent="@style/GeneralListItemTitle">
+        <item name="android:textSize">15.0dip</item>
+    </style>
+    <style name="TreeViewListItemNumero" parent="@style/GeneralListItemNumero">
+        <item name="android:textSize">13.0dip</item>
+    </style>
+    <style name="TreeViewListItemSubTitle" parent="@style/GeneralListItemTitle">
+        <item name="android:textSize">13.0dip</item>
+    </style>
+    <style name="TreeViewListItemDetails" parent="@style/TreeViewListItemSubTitle" />
+    <style name="ItemCriteriaTitle" parent="@style/ItemTitle">
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+    </style>
+    <style name="ItemTitle" parent="@style/TextItem">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    <style name="ItemGaleryTitle" parent="@style/ItemGaleryTitleGeneric">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="ItemSubtitle" parent="@style/TextItem">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff727171</item>
+    </style>
+    <style name="ItemSubtitle2" parent="@style/TextItem">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ff727171</item>
+    </style>
+    <style name="ItemInfo" parent="@style/TextItem">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="InfoItemsText" parent="@style/InfoItemsTextGeneric">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:paddingRight">27.0dip</item>
+    </style>
+    <style name="TextualButtonClose" parent="@style/TextualButton">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="CenteredGreenBtn" parent="@style/CenteredGreenBtnGeneric">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_marginTop">25.0dip</item>
+    </style>
+    <style name="FontBookInfosDetails" parent="@style/FontBookInfosDetailsGeneric">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    <style name="BookInfosActivityCover">
+        <item name="android:layout_width">160.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="BookInfosImage" parent="@style/BookInfosImageGeneric">
+        <item name="android:layout_marginLeft">2.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="NotebookItemList" parent="@style/NotebookItemListGeneric">
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:layout_height">92.0dip</item>
+    </style>
+    <style name="NotebookHighlight" parent="@style/NotebookHighlightGeneric">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="BookInfosList" parent="@style/ItemListGeneric">
+        <item name="android:paddingLeft">@dimen/bookInfosPadding</item>
+        <item name="android:paddingRight">@dimen/bookInfosPadding</item>
+        <item name="android:layout_height">92.0dip</item>
+    </style>
+    <style name="OPDSCategoryList" parent="@style/BookInfosList">
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_height">65.0dip</item>
+    </style>
+    <style name="OPDSItemBtn" parent="@style/OPDSItemBtnGeneric">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:layout_width">80.0dip</item>
+    </style>
+    <style name="ListGridView" parent="@style/ThumbnailGridView">
+        <item name="android:scrollbarStyle">insideOverlay</item>
+        <item name="android:columnWidth">450.0dip</item>
+        <item name="android:fastScrollAlwaysVisible">true</item>
+    </style>
+    <style name="ThumbnailGridViewBig" parent="@style/ThumbnailGridView">
+        <item name="android:scrollbarStyle">insideOverlay</item>
+        <item name="android:columnWidth">255.0dip</item>
+        <item name="android:fastScrollAlwaysVisible">true</item>
+    </style>
+    <style name="ThumbnailContainerBig">
+        <item name="android:layout_width">254.0dip</item>
+        <item name="android:layout_height">382.0dip</item>
+    </style>
+    <style name="ThumbnailGridViewMedium" parent="@style/ThumbnailGridView">
+        <item name="android:scrollbarStyle">insideOverlay</item>
+        <item name="android:columnWidth">160.0dip</item>
+        <item name="android:fastScrollAlwaysVisible">true</item>
+    </style>
+    <style name="ThumbnailContainerMedium">
+        <item name="android:layout_width">159.0dip</item>
+        <item name="android:layout_height">240.0dip</item>
+    </style>
+    <style name="ThumbnailGridViewSmall" parent="@style/ThumbnailGridView">
+        <item name="android:scrollbarStyle">insideOverlay</item>
+        <item name="android:columnWidth">106.0dip</item>
+        <item name="android:fastScrollAlwaysVisible">true</item>
+    </style>
+    <style name="ThumbnailContainerSmall">
+        <item name="android:layout_width">105.0dip</item>
+        <item name="android:layout_height">165.0dip</item>
+    </style>
+    <style name="TabBar" parent="@style/TabBarGeneric">
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="Tab" parent="@style/TabGeneric">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:background">@drawable/tab_background_selector</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:paddingRight">14.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+    </style>
+    <style name="Header" parent="@style/HeaderGeneric">
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="HeaderTitle" parent="@style/HeaderTitleGeneric">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="SortHeader" parent="@style/SortHeaderGeneric">
+        <item name="android:paddingLeft">40.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+    </style>
+    <style name="AllCheckbox" parent="@style/AllCheckboxGeneric">
+        <item name="android:paddingRight">15.0dip</item>
+    </style>
+    <style name="CustomCheckbox" parent="@style/CustomCheckboxGeneric">
+        <item name="android:textSize">15.0dip</item>
+    </style>
+    <style name="BookInfosDialog">
+        <item name="android:layout_width">600.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="BookInfosDialogSectionContener">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+    </style>
+    <style name="BookInfosDialogSectionContenerHeader">
+        <item name="android:padding">20.0dip</item>
+    </style>
+    <style name="ReaderDialog">
+        <item name="android:layout_width">600.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ButtonPanel" parent="@style/ButtonPanelGeneric">
+        <item name="android:background">#ffffffff</item>
+    </style>
+    <style name="PopupSeparator" parent="@style/PopupSeparatorGeneric">
+        <item name="android:background">#ffd3d3d3</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="TagPopupList" parent="@style/TagPopupListGeneric">
+        <item name="android:dividerHeight">8.0dip</item>
+    </style>
+    <style name="PopupButtonGlobal" parent="@style/PopupButtonsGeneric">
+        <item name="android:background">@drawable/button_ok_background_selector_light</item>
+    </style>
+    <style name="PopupButtonSearch" parent="@style/PopupButtonSearchGeneric">
+        <item name="android:background">@drawable/button_ok_background_selector_light</item>
+    </style>
+    <style name="PopupSectionTitle" parent="@style/PopupTextGeneric">
+        <item name="android:textSize">@dimen/popupSectionTitleSize</item>
+        <item name="android:textColor">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="PopupTitle" parent="@style/PopupTitleGeneric">
+        <item name="android:textSize">17.0dip</item>
+    </style>
+    <style name="TagsPopupContener" parent="@style/TagsPopupContenerGeneric">
+        <item name="android:padding">0.0dip</item>
+    </style>
+    <style name="TagButton" parent="@style/TagButtonGeneric">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:drawablePadding">15.0dip</item>
+    </style>
+    <style name="LibraryCoverImageList" parent="@style/LibraryCoverImageGeneric">
+        <item name="android:layout_width">50.0dip</item>
+    </style>
+    <style name="LibraryCoverImageDetails" parent="@style/LibraryCoverImageGeneric">
+        <item name="android:layout_width">80.0dip</item>
+    </style>
+    <style name="ItemTitleLibrary" parent="@style/ItemTitle">
+        <item name="android:paddingTop">14.0dip</item>
+    </style>
+    <style name="ItemTitleDico" parent="@style/ItemTitle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+    </style>
+    <style name="ItemExplorer" parent="@style/ItemExplorerGeneric">
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+    </style>
+    <style name="ItemTitleExplorer" parent="@style/ItemTitle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:paddingLeft">18.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="EmptyListLabel" parent="@style/EmptyListLabelGeneric">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:padding">20.0dip</item>
+    </style>
+    <style name="WordDefinition" parent="@style/WordDefinitionGeneric">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    <style name="DictionaryLabel" parent="@style/DictionaryLabelGeneric">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    <style name="FloatableQuickaction" parent="@style/FloatableQuickactionGeneric">
+        <item name="android:layout_width">700.0dip</item>
+    </style>
+    <style name="QuickActionButton">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="TipContent">
+        <item name="android:textSize">17.0dip</item>
+    </style>
+    <style name="ZendeskLabel" parent="@style/ZendeskLabelGeneric">
+        <item name="android:textSize">17.0dip</item>
+    </style>
+    <style name="ZendeskButton">
+        <item name="android:textSize">15.0dip</item>
+    </style>
+    <style name="PreferencePanel">
+        <item name="android:background">?android:detailsElementBackground</item>
+        <item name="android:layout_marginLeft">96.0dip</item>
+        <item name="android:layout_marginTop">48.0dip</item>
+        <item name="android:layout_marginRight">96.0dip</item>
+        <item name="android:layout_marginBottom">48.0dip</item>
+    </style>
+    <style name="HomeLayout" parent="@style/HomeLayoutGeneric">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="ItemGaleryPrice" parent="@style/ItemTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+    </style>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ReaderDialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/toolbarHeight"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <FrameLayout
+        android:id="@id/popup_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2.0dip"
+        android:background="@drawable/quickcontact_top_frame_green" />
+
+    <TextView
+        android:id="@id/popup_title"
+        style="@style/PopupTitle"
+        android:background="@drawable/popup_with_arrow_background_green"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@id/tracks"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/popup_with_arrow_background_green"
+        android:orientation="vertical"
+        android:paddingLeft="1.0px"
+        android:paddingRight="1.0px" >
+
+        <ListView
+            android:id="@id/mainTreeView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dip"
+            android:padding="10dip" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/popup_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quickcontact_bottom_frame_green" />
+
+</LinearLayout>

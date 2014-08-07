@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="about"
+        android:title="@string/about" >
+        <Preference
+            android:key="about_product"
+            android:persistent="false"
+            android:summary="@string/app_name"
+            android:title="@string/about_product" />
+        <Preference
+            android:key="about_version"
+            android:persistent="false"
+            android:title="@string/about_version" />
+        <Preference
+            android:key="about_publisher"
+            android:persistent="false"
+            android:summary="achellies"
+            android:title="@string/about_publisher" />
+        <Preference
+            android:key="about_qq"
+            android:persistent="false"
+            android:summary="86455009"
+            android:title="@string/about_qq_number" />
+        <Preference
+            android:key="about_update"
+            android:persistent="false"
+            android:title="@string/application_check_updata" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

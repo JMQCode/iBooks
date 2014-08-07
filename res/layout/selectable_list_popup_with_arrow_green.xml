@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/popup_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:stretchMode="columnWidth" >
+
+    <ImageView
+        android:id="@id/arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:src="@drawable/quickcontact_arrow_up_green" />
+
+    <FrameLayout
+        android:id="@id/popup_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1.0dip"
+        android:background="@drawable/quickcontact_top_frame_green" >
+
+        <Button
+            android:id="@id/dialog_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.0"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/dialog_close"
+            android:gravity="right|center"
+            android:paddingRight="7.0dip"
+            android:paddingTop="7.0dip"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@id/popup_title"
+        style="@style/PopupTitle"
+        android:background="@drawable/popup_with_arrow_background_green" />
+
+    <LinearLayout
+        android:id="@id/popup_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/popup_with_arrow_background_green"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingRight="7.0dip"
+        android:paddingTop="7.0dip" >
+
+        <TextView
+            android:id="@id/all_checkbox_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.0"
+            android:paddingRight="7.0dip"
+            android:text="@string/select_all"
+            android:textColor="#ffffffff"
+            android:textSize="13.0dip" />
+
+        <CheckBox
+            android:id="@id/all_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:button="@drawable/custom_checkbox"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="right"
+            android:paddingBottom="3.0dip"
+            android:paddingLeft="7.0dip"
+            android:paddingRight="7.0dip"
+            android:paddingTop="0.0px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/content_panel"
+        android:layout_width="266.0dip"
+        android:layout_height="240.0dip"
+        android:background="@drawable/popup_with_arrow_background_green"
+        android:orientation="vertical"
+        android:paddingLeft="1.0px"
+        android:paddingRight="1.0px"
+        android:stretchMode="columnWidth" />
+
+    <LinearLayout
+        android:id="@id/popup_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/popup_with_arrow_background_green"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="7.0dip" >
+
+        <Button
+            android:id="@id/popup_cancel_btn"
+            style="@style/TextualButtonClose"
+            android:layout_marginLeft="13.0dip"
+            android:background="@drawable/button_background_selector"
+            android:text="@string/close" />
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="3.0dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="3.0dip"
+            android:layout_weight="0.0"
+            android:gravity="center" />
+
+        <Button
+            android:id="@id/popup_ok_btn"
+            style="@style/TextualButtonClose"
+            android:background="@drawable/button_ok_background_selector"
+            android:text="@string/ok" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/popup_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"
+        android:background="@drawable/quickcontact_bottom_frame_green" />
+
+    <ImageView
+        android:id="@id/arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7.0dip"
+        android:layout_marginRight="7.0dip"
+        android:layout_marginTop="0.0dip"
+        android:src="@drawable/quickcontact_arrow_down_green" />
+
+</LinearLayout>

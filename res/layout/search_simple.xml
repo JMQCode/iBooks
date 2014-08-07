@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/searchbar"
+    style="@style/HighlightBarGeneric"
+    android:layout_width="310.0dip"
+    android:visibility="gone" >
+
+    <EditText
+        android:id="@id/search_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20.0dip"
+        android:layout_weight="1.0"
+        android:imeOptions="actionSearch"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@id/search_dialog_close"
+        style="@style/PanelCloseButton"
+        android:onClick="onClick" />
+
+</LinearLayout>

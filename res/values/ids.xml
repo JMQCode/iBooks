@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="splash_layout" type="id"/>
+    <item name="info_image_switcher" type="id"/>
+    <item name="toolbar" type="id"/>
+    <item name="view_btn" type="id"/>
+    <item name="search_btn" type="id"/>
+    <item name="close_btn" type="id"/>
+    <item name="library_synchronize_btn" type="id"/>
+    <item name="settings" type="id"/>
+    <item name="search_input" type="id"/>
+    <item name="search_dialog_close" type="id"/>
+    <item name="searchbar" type="id"/>
+    <item name="bookreader_next" type="id" />
+    <item name="bookreader_previous" type="id" />
+    <item name="library_order_icon" type="id"/>
+    <item name="library_change_sort_criteria_header" type="id"/>
+    <item name="all_checkbox" type="id"/>
+    <item name="path_text" type="id"/>
+    <item name="filelist" type="id"/>
+    <item name="operation_panel" type="id"/>
+    <item name="image" type="id"/>
+    <item name="name" type="id"/>
+    <item name="description" type="id"/>
+    <item name="checkbox" type="id"/>
+    <item name="arrow_up" type="id"/>
+    <item name="popup_list" type="id"/>
+    <item name="popup_header" type="id"/>
+    <item name="dialog_close" type="id"/>
+    <item name="popup_title" type="id"/>
+    <item name="content_panel" type="id"/>
+    <item name="popup_footer" type="id"/>
+    <item name="arrow_down" type="id"/>
+    <item name="popup_cancel_btn" type="id"/>
+    <item name="popup_ok_btn" type="id"/>
+    <item name="popup_buttons" type="id"/>
+    <item name="all_checkbox_label" type="id"/>
+    <item name="header2" type="id"/>
+    <item name="scroll" type="id"/>
+    <item name="footer" type="id"/>
+    <item name="tracks" type="id"/>
+    <item name="iv_icon" type="id"/>
+    <item name="tv_title" type="id"/>
+    <item name="scroller" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="library_icon_text_books_list_view" type="id"/>
+    <item name="book_bloc_item_list" type="id"/>
+    <item name="icon" type="id"/>
+    <item name="title" type="id"/>
+    <item name="format" type="id"/>
+    <item name="size" type="id"/>
+    <item name="icon_layout" type="id"/>
+    <item name="book_checkbox" type="id"/>
+    <item name="progress_icon" type="id"/>
+    <item name="author" type="id"/>
+    <item name="creation_date" type="id"/>
+    <item name="track_layout" type="id"/>
+    <item name="rate_info" type="id"/>
+    <item name="rate_info_percent" type="id"/>
+    <item name="progressbar" type="id"/>
+    <item name="content_container" type="id"/>
+    <item name="listview" type="id"/>
+    <item name="main_layout" type="id"/>
+    <item name="pageViewContainer" type="id"/>
+    <item name="pageview" type="id"/>
+    <item name="text_time" type="id"/>
+    <item name="text_battery" type="id"/>
+    <item name="imagePreviewContainer" type="id"/>
+    <item name="imagePreview" type="id"/>
+    <item name="bookreader_pagenumber" type="id"/>
+    <item name="seek" type="id"/>
+    <item name="open_navigation" type="id"/>
+    <item name="toolbar_theme" type="id"/>
+    <item name="toolbar_display_settings" type="id"/>
+    <item name="bookreader_toolbar" type="id"/>
+    <item name="chapter_loading_bar" type="id" />
+    <item name="toolbar_brightness" type="id" />
+    <item name="read_info" type="id"/>
+    <item name="progress" type="id"/>
+    <item name="epub_settings_line" type="id"/>
+    <item name="font_panel_epub" type="id"/>
+    <item name="bookreader_smaller_font_btn_epub" type="id"/>
+    <item name="bookreader_larger_font_btn_epub" type="id"/>
+    <item name="bookreader_bright_down_btn_epub" type="id"/>
+    <item name="bookreader_bright_up_btn_epub" type="id"/>
+    <item name="bookreader_align_justified" type="id" />
+    <item name="bookreader_align_left" type="id" />
+    <item name="bookreader_align_right" type="id" />
+    <item name="bookreader_align_center" type="id" />
+    <item name="bookreader_lineheight_larger" type="id" />
+    <item name="bookreader_lineheight_smaller" type="id" />
+    <item name="screen_orientation_epub" type="id"/>
+    <item name="settings_dialog_ok" type="id"/>
+    <item name="night_mode" type="id"/>
+    <item name="separator" type="id"/>
+    <item name="theme_mode1" type="id"/>
+    <item name="theme_mode2" type="id"/>
+    <item name="theme_mode3" type="id"/>
+    <item name="theme_mode4" type="id"/>
+    <item name="theme_mode5" type="id"/>
+    <item name="theme_mode6" type="id"/>
+    <item name="theme_mode7" type="id"/>
+    <item name="theme_mode8" type="id"/>
+    <item name="theme_mode9" type="id"/>
+    <item name="search_previous" type="id"/>
+    <item name="search_next" type="id"/>
+    <item name="search_close" type="id"/>
+    <item name="delete_btn" type="id"/>
+    <item name="items" type="id" />
+    <item type="id" name="mainTreeView"/>
+    <item type="id" name="toc_item_layout"/>
+    <item type="id" name="treeview_item_title"/>
+    <item type="id" name="treeview_item_page"/>
+    <item type="id" name="treeview_go"/>
+    <item type="id" name="treeview_collapse"/>
+    <item name="fullscreen_custom_content" type="id"/>
+    <item name="tablePreviewContainer" type="id"/>
+    <item name="tablePreviewWebview" type="id"/>
+    <item name="top_toolbar" type="id" />
+<item name="bottom_toolbar" type="id" />
+</resources>

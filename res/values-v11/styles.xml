@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GenericProgressBar" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+    <style name="Theme.Mantano.Light" parent="@android:style/Theme.Holo.Light">
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/scrollbar_handle</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_handle</item>
+        <item name="android:autoCompleteTextViewStyle">@style/Widget.AutoCompleteTextViewLight</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:dropDownItemStyle">@style/Widget.DropDownItemLight</item>
+        <item name="android:actionBarStyle">@style/MantanoActionBarStyle</item>
+        <item name="android:actionModeBackground">@drawable/bg_action_bar</item>
+        <item name="android:actionBarTabStyle">@style/MantanoActionBarTabStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/MantanoActionBarTitleTextStyle</item>
+        <item name="android:actionOverflowButtonStyle">@android:style/Widget.Holo.ActionButton.Overflow</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb</item>
+        <item name="android:fastScrollTrackDrawable">@drawable/fastscroll_track</item>
+        <item name="android:actionMenuTextAppearance">?android:textAppearanceSmall</item>
+        <item name="android:actionMenuTextColor">#ffffffff</item>
+        <item name="readerToolbarBackground">@drawable/toolbar_reader</item>
+        <item name="readerSplitToolbarBackground">@null</item>
+        <item name="readerSplitToolbarSeekbarBackground">@null</item>
+        <item name="readerSplitToolbarRoundBackground">@null</item>
+    </style>
+    <style name="Theme.Mantano.Reader" parent="@style/Theme.Mantano.Light">
+        <item name="android:actionBarStyle">@style/MantanoReaderActionBarStyle</item>
+        <item name="android:actionModeBackground">@drawable/header_title_background</item>
+    </style>
+    <style name="Theme.Mantano.Dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:autoCompleteTextViewStyle">@style/Widget.AutoCompleteTextViewLight</item>
+        <item name="android:textViewStyle">@style/Widget.TextViewLight</item>
+        <item name="android:dropDownItemStyle">@style/Widget.DropDownItemLight</item>
+    </style>
+    <style name="BookInfos.Mantano.Dialog" parent="@style/Theme.Mantano.Dialog" />
+    <style name="Theme.Mantano.Css" parent="@android:style/Theme.Holo.Light">
+        <item name="android:autoCompleteTextViewStyle">@style/Widget.AutoCompleteTextViewLight</item>
+        <item name="android:dropDownItemStyle">@style/Widget.DropDownItemLight</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="MantanoActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:textStyle">italic</item>
+        <item name="android:background">@drawable/bg_action_bar</item>
+        <item name="android:titleTextStyle">@style/CustomTitle</item>
+        <item name="android:subtitleTextStyle">@style/MantanoActionBarTitleTextStyle</item>
+    </style>
+    <style name="MantanoReaderActionBarStyle" parent="@android:style/Widget.ActionBar">
+        <item name="android:background">@drawable/header_title_background</item>
+        <item name="android:titleTextStyle">@style/CustomTitle</item>
+        <item name="android:subtitleTextStyle">@style/MantanoActionBarTitleTextStyle</item>
+    </style>
+    <style name="MantanoActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/actionbar_tab_bg</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+    </style>
+    <style name="MantanoActionBarTitleTextStyle" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

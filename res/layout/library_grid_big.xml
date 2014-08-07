@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView android:id="@id/library_icon_text_books_list_view" style="@style/ThumbnailGridViewBig"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

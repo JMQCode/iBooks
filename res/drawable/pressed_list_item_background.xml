@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="@color/pressed_list_selected_light_start" android:endColor="@color/pressed_list_selected_light_end" android:angle="315.0" />
+        </shape>
+    </item>
+</layer-list>

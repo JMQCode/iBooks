@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dip"
+    android:layout_height="48.0dip"
+    android:layout_marginLeft="-4.0dip"
+    android:layout_marginRight="-4.0dip"
+    android:padding="10.0dip"
+    android:layout_weight="1.0"
+    android:background="@drawable/tab_holo"
+    android:ellipsize="end"
+    android:focusable="true"
+    android:focusableInTouchMode="false"
+    android:gravity="center"
+    android:onClick="onClick"
+    android:selectAllOnFocus="false"
+    android:textColor="@android:color/black"
+    android:singleLine="true"
+    android:textSize="18.0sp" />

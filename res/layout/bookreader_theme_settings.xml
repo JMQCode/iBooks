@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingTop="8.0dip" >
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="4.0dip" >
+
+            <Button
+                android:id="@id/theme_mode1"
+                style="@style/DisplaySettingsButton"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/style01"
+                android:onClick="onClick" />
+
+            <View style="@style/PopupVerticalSeparator" />
+
+            <Button
+                android:id="@id/theme_mode2"
+                style="@style/DisplaySettingsButton"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/style02"
+                android:onClick="onClick" />
+
+            <View style="@style/PopupVerticalSeparator" />
+
+            <Button
+                android:id="@id/theme_mode3"
+                style="@style/DisplaySettingsButton"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/style03"
+                android:onClick="onClick" />
+
+            <View style="@style/PopupVerticalSeparator" />
+
+            <Button
+                android:id="@id/theme_mode4"
+                style="@style/DisplaySettingsButton"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/style04"
+                android:onClick="onClick" />
+
+            <View style="@style/PopupVerticalSeparator" />
+
+            <Button
+                android:id="@id/theme_mode5"
+                style="@style/DisplaySettingsButton"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/style05"
+                android:onClick="onClick" />
+
+            <View style="@style/PopupVerticalSeparator" />
+
+            <Button
+                android:id="@id/theme_mode6"
+                style="@style/DisplaySettingsButton"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/style06"
+                android:onClick="onClick" />
+
+            <View style="@style/PopupVerticalSeparator" />
+
+            <Button
+                android:id="@id/theme_mode7"
+                style="@style/DisplaySettingsButton"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/style07"
+                android:onClick="onClick" />
+
+            <View style="@style/PopupVerticalSeparator" />
+
+            <Button
+                android:id="@id/theme_mode8"
+                style="@style/DisplaySettingsButton"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/style08"
+                android:onClick="onClick" />
+
+            <View style="@style/PopupVerticalSeparator" />
+
+            <Button
+                android:id="@id/theme_mode9"
+                style="@style/DisplaySettingsButton"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/style09"
+                android:onClick="onClick" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@id/settings_dialog_ok"
+        style="@style/TextualButtonClose"
+        android:layout_marginBottom="11.0dip"
+        android:layout_marginTop="11.0dip"
+        android:background="@drawable/button_ok_background_selector"
+        android:onClick="onClick"
+        android:text="@string/close" />
+
+</LinearLayout>

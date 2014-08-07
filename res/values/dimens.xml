@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="actionbar_height">52dip</dimen>
+    <dimen name="actionbar_separator_height">44dip</dimen>
+    <dimen name="actionbar_separator_width">4dip</dimen>
+    
+    
+    <dimen name="color_picker_satudp">1.0dip</dimen>
+    <dimen name="splashScreenTrialTextSize">15.0dip</dimen>
+    <dimen name="splashScreenInfoUserTextSize">13.0dip</dimen>
+    <dimen name="splashScreenInfoAdobeTextSize">8.0dip</dimen>
+    <dimen name="thumbnailSmallTitleTextSize">8.0dip</dimen>
+    <dimen name="thumbnailSmallTitleHeight">24.0dip</dimen>
+    <dimen name="thumbnailSmallImageWidth">70.0dip</dimen>
+    <dimen name="thumbnailMediumTitleTextSize">10.0dip</dimen>
+    <dimen name="thumbnailMediumTitleHeight">32.0dip</dimen>
+    <dimen name="thumbnailMediumImageWidth">95.0dip</dimen>
+    <dimen name="thumbnailBigTitleTextSize">13.0dip</dimen>
+    <dimen name="thumbnailBigTitleHeight">48.0dip</dimen>
+    <dimen name="thumbnailBigImageWidth">160.0dip</dimen>
+    <dimen name="toolbarTextSize">9.0dip</dimen>
+    <dimen name="toolbarHeight">55.0dip</dimen>
+    <dimen name="toolbarReaderPageNumberTextSize">11.0dip</dimen>
+    <dimen name="drawNoteTitleHeight">45.0dip</dimen>
+    <dimen name="searchPanelWidth">270.0dip</dimen>
+    <dimen name="collectionsItemSize">40.0dip</dimen>
+    <dimen name="collectionsItemPaddingLeft">8.0dip</dimen>
+    <dimen name="collectionsIconWidth">40.0dip</dimen>
+    <dimen name="collectionsIconHeight">30.0dip</dimen>
+    <dimen name="collectionSpinnerTextSize">14.0dip</dimen>
+    <dimen name="collectionCategorySize">14.0dip</dimen>
+    <dimen name="bookInfosTitleTextSize">16.0dip</dimen>
+    <dimen name="bookInfosAuthorTextSize">14.0dip</dimen>
+    <dimen name="bookInfosDetailDefaultSize">90.0dip</dimen>
+    <dimen name="bookInfosDetailShareSize">110.0dip</dimen>
+    <dimen name="bookInfosPadding">0.0dip</dimen>
+    <dimen name="localTabHeight">40.0dip</dimen>
+    <dimen name="localTabFontSize">12.0dip</dimen>
+    <dimen name="dialogItemTitle">14.0dip</dimen>
+    <dimen name="dialogItemSubtitle">13.0dip</dimen>
+    <dimen name="readerDialogItemHeight">48.0dip</dimen>
+    <dimen name="readerDialogTabTextSize">11.0dip</dimen>
+    <dimen name="readerDialogItemTitle">12.0dip</dimen>
+    <dimen name="readerDialogItemSubTitle">11.0dip</dimen>
+    <dimen name="readerPanelMinWidth">200.0dip</dimen>
+    <dimen name="synthesisBookSize">15.0dip</dimen>
+    <dimen name="dialogListPadding">16.0dip</dimen>
+    <dimen name="actionItemTextSize">12.0dip</dimen>
+    <dimen name="noItemsTextSize">12.0dip</dimen>
+    <dimen name="popupSectionTitleSize">14.0dip</dimen>
+    <dimen name="sidepanelWidth">160.0dip</dimen>
+    <dimen name="sidepanelEditWidth">200.0dip</dimen>
+    <dimen name="opdsGalerieHeight">170.0dip</dimen>
+    <dimen name="opdsGaleriePadding">15.0dip</dimen>
+    <dimen name="gallerySpacing">4.0dip</dimen>
+    <dimen name="opdsGalerieMarginTop">5.0dip</dimen>
+    <dimen name="opdsGalerieMarginBottom">5.0dip</dimen>
+    <dimen name="readerToolbarElementsMargin">0.0dip</dimen>
+    <dimen name="wizardButtonWidth">96.0dip</dimen>
+    <dimen name="toastTextSize">15.0dip</dimen>
+    <dimen name="toastTextExtra1Size">15.0dip</dimen>
+    <dimen name="toastTextExtra2Size">14.0dip</dimen>
+    <dimen name="toastTextExtra3Size">13.0dip</dimen>
+    <dimen name="toastTextExtra4Size">12.0dip</dimen>
+    <dimen name="toastTextExtra5Size">11.0dip</dimen>
+    <dimen name="bookShelfTopMargin">20.0dip</dimen>
+    <dimen name="bookShelfBottomMargin">26.0dip</dimen>
+    <dimen name="bookShelfHeight">206.0dip</dimen>
+    <dimen name="bookShelfThumbWidth">102.0dip</dimen>
+    <dimen name="bookShelfThumbHeight">160.0dip</dimen>
+    <dimen name="bookShelfLeftMargin">28.0dip</dimen>
+    <dimen name="bookShelfRightMargin">28.0dip</dimen>
+
+</resources>

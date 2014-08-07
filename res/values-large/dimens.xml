@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="collectionSpinnerTextSize">15.0dip</dimen>
+    <dimen name="collectionCategorySize">15.0dip</dimen>
+    <dimen name="readerToolbarElementsMargin">0.0dip</dimen>
+</resources>

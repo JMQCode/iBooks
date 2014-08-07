@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/popup_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:stretchMode="columnWidth" >
+
+    <ImageView
+        android:id="@id/arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:src="@drawable/quickcontact_arrow_up_black" />
+
+    <FrameLayout
+        android:id="@id/popup_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1.0dip"
+        android:background="@drawable/quickcontact_top_frame_black" >
+
+        <Button
+            android:id="@id/dialog_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.0"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/dialog_close"
+            android:gravity="right|center"
+            android:paddingRight="7.0dip"
+            android:paddingTop="7.0dip"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@id/popup_title"
+        style="@style/PopupTitle" />
+
+    <LinearLayout
+        android:id="@id/content_panel"
+        android:layout_width="266.0dip"
+        android:layout_height="333.0dip"
+        android:background="@drawable/popup_with_arrow_background_black"
+        android:fadingEdgeLength="0.0dip"
+        android:orientation="vertical"
+        android:paddingLeft="1.0px"
+        android:paddingRight="1.0px"
+        android:stretchMode="columnWidth" />
+
+    <FrameLayout
+        android:id="@id/popup_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quickcontact_bottom_frame_black" />
+
+    <ImageView
+        android:id="@id/arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1.0dip"
+        android:src="@drawable/quickcontact_arrow_down_black" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/book_bloc_item_list"
+    style="@style/ThumbnailContainerSmall"
+    android:background="@drawable/list_view_item_selector"
+    android:gravity="bottom|center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/ThumbnailContainerSmall"
+        android:layout_margin="1.0dip"
+        android:background="@drawable/small_shadow" >
+
+        <ImageView
+            android:id="@id/icon"
+            style="@style/ThumbnailImageSmall"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_cover" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/ThumbnailSmallTitle"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@id/format"
+            style="@style/BookFormat"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>

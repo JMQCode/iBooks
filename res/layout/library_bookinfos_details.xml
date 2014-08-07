@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BookInfosDetails"
+    android:background="@drawable/spinner_focused_holo_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="1dip" >
+
+    <RelativeLayout
+        android:id="@id/book_bloc_item_list"
+		style="@style/BookInfosDetails"
+        android:background="@drawable/list_view_item_selector"
+        android:paddingBottom="2.0dip"
+        android:paddingTop="2.0dip" >
+
+        <FrameLayout
+            android:id="@id/icon_layout"
+            style="@style/BookInfosImage" >
+
+            <ImageView
+                android:id="@id/icon"
+                style="@style/LibraryCoverImageDetails"
+                android:src="@drawable/no_cover" />
+
+            <ImageView
+                android:id="@id/format"
+                style="@style/BookFormat" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@id/title"
+            style="@style/ItemTitleLibrary"
+            android:layout_toLeftOf="@id/book_checkbox"
+            android:layout_toRightOf="@id/icon_layout"
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:singleLine="false" />
+
+        <TextView
+            android:id="@id/author"
+            style="@style/ItemSubtitle"
+            android:layout_below="@id/title"
+            android:layout_toLeftOf="@id/book_checkbox"
+            android:layout_toRightOf="@id/icon_layout"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@id/creation_date"
+            style="@style/ItemSubtitle2"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/author"
+            android:layout_marginTop="2.0dip"
+            android:layout_toRightOf="@id/icon_layout"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@id/size"
+            style="@style/ItemSubtitle2"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/creation_date"
+            android:layout_marginTop="2.0dip"
+            android:layout_toRightOf="@id/icon_layout"
+            android:singleLine="true" />
+
+        <CheckBox
+            android:id="@id/book_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/custom_checkbox"
+            android:focusable="false"
+            android:gravity="right|center"
+            android:paddingBottom="7.0dip"
+            android:paddingLeft="7.0dip"
+            android:paddingRight="3.0dip"
+            android:paddingTop="15.0dip" />
+
+        <LinearLayout
+            android:id="@id/progress_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/book_checkbox" >
+
+            <include layout="@layout/tracking_progress" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

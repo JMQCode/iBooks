@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/read_bg_5" >
+
+    <com.greenlemonmobile.app.ebook.books.views.WebReader
+        android:id="@+id/webreader"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/top_infoview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="2.0"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:textColor="@color/font_blue_night" />
+
+        <TextView
+            android:id="@+id/authorName"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/font_blue_night" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_infoview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/chapterName"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:textColor="@color/font_blue_night" />
+
+        <TextView
+            android:id="@+id/pageIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:gravity="right|center"
+            android:singleLine="true"
+            android:textColor="@color/font_blue_night" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/searchbar"
+        style="@style/SearchPanel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@id/search_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3.0dip"
+            android:layout_weight="1.0"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@id/search_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.0"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/header_search_previous"
+            android:onClick="onClick"
+            android:padding="6.0dip" />
+
+        <Button
+            android:id="@id/search_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2.0dip"
+            android:layout_weight="0.0"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/header_search_next"
+            android:onClick="onClick"
+            android:padding="6.0dip" />
+
+        <Button
+            android:id="@id/search_close"
+            style="@style/PanelCloseButton"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/bookreader_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent" >
+
+        <RelativeLayout
+            android:id="@id/top_toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/header_title_background"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/icon_book_reading"
+                android:drawablePadding="5.0dip"
+                android:paddingLeft="10.0dip"
+                android:textColor="@android:color/white"
+                android:textSize="14.0dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@id/text_battery"
+                android:layout_toRightOf="@id/text_time"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="@android:color/white"
+                android:textSize="20.0dip"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@id/text_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="10.0dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/middle_toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/bottom_toolbar"
+            android:layout_below="@id/top_toolbar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.google.ads.AdView
+                android:id="@+id/ad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                ads:adSize="BANNER"
+                ads:adUnitId="a1509bbab5efa85"
+                ads:loadAdOnCreate="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/bottom_toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/toolbar_reader"
+            android:clickable="true"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@id/bookreader_pagenumber"
+                style="@style/ToolbarReaderPageNumber"
+                android:layout_marginBottom="@dimen/readerToolbarElementsMargin"
+                android:textColor="@color/toolbarButtonColor" />
+
+            <SeekBar
+                android:id="@id/seek"
+                style="@style/ToolbarReaderSeekBar"
+                android:layout_marginBottom="@dimen/readerToolbarElementsMargin"
+                android:background="@null" />
+
+            <ProgressBar
+                android:id="@+id/paginating_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/readerToolbarElementsMargin"
+                android:max="100"
+                android:paddingBottom="4.0dip"
+                android:paddingLeft="30.0dip"
+                android:paddingRight="30.0dip"
+                android:paddingTop="4.0dip"
+                android:progress="0"
+                android:progressDrawable="@drawable/green_progress" />
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/toolbarHeight"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/toolbar_background"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:paddingTop="5dip" >
+
+                    <Button
+                        android:id="@id/open_navigation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toolbar_button_selector"
+                        android:drawableTop="@drawable/toolbar_navigation"
+                        android:onClick="onClick"
+                        android:text="@string/open_toc_title"
+                        android:textColor="@android:color/white"
+                        android:textSize="12.0dip" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0" />
+
+                    <Button
+                        android:id="@id/search_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toolbar_button_selector"
+                        android:drawableTop="@drawable/toolbar_search"
+                        android:onClick="onClick"
+                        android:text="@string/search"
+                        android:textColor="@android:color/white"
+                        android:textSize="12.0dip" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0" />
+
+                    <Button
+                        android:id="@id/toolbar_theme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toolbar_button_selector"
+                        android:drawableTop="@drawable/toolbar_css"
+                        android:onClick="onClick"
+                        android:text="@string/themes"
+                        android:textColor="@android:color/white"
+                        android:textSize="12.0dip" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0" />
+
+                    <Button
+                        android:id="@id/toolbar_display_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toolbar_button_selector"
+                        android:drawableTop="@drawable/toolbar_display_settings"
+                        android:onClick="onClick"
+                        android:text="@string/display_settings"
+                        android:textColor="@android:color/white"
+                        android:textSize="12.0dip" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0" />
+
+                    <Button
+                        android:id="@id/toolbar_brightness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toolbar_button_selector"
+                        android:drawableTop="@drawable/toolbar_brightness"
+                        android:onClick="onClick"
+                        android:text="@string/brightness"
+                        android:textColor="@android:color/white"
+                        android:textSize="12.0dip" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0" />
+
+                    <Button
+                        android:id="@id/night_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toolbar_button_selector"
+                        android:drawableTop="@drawable/toolbar_negative"
+                        android:onClick="onClick"
+                        android:text="@string/night_mode"
+                        android:textColor="@android:color/white"
+                        android:textSize="12.0dip" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@id/chapter_loading_bar"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@id/read_info"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/read_info"
+        android:visibility="gone" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/toc_popup" />
+
+</RelativeLayout>

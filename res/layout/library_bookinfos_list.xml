@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BookInfosList"
+    android:background="@drawable/spinner_focused_holo_dark"
+    android:padding="1dip" >
+
+    <RelativeLayout
+        android:id="@id/book_bloc_item_list"
+        style="@style/BookInfosList"
+        android:background="@drawable/list_view_item_selector"
+        android:gravity="left|center"
+        android:paddingBottom="1.0dip"
+        android:paddingTop="1.0dip" >
+
+        <FrameLayout
+            android:id="@id/icon_layout"
+            style="@style/BookInfosImage" >
+
+            <ImageView
+                android:id="@id/icon"
+                style="@style/LibraryCoverImageList"
+                android:src="@drawable/no_cover" />
+
+            <ImageView
+                android:id="@id/format"
+                style="@style/BookFormat" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@id/title"
+            style="@style/ItemTitle"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/book_checkbox"
+            android:layout_toRightOf="@id/icon_layout"
+            android:paddingBottom="2.0dip"
+            android:paddingTop="4.0dip"
+            android:singleLine="true"
+            android:text="@string/title" />
+
+        <TextView
+            android:id="@id/author"
+            style="@style/ItemSubtitle"
+            android:layout_below="@id/title"
+            android:layout_toRightOf="@id/icon_layout"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="2.0dip"
+            android:singleLine="true"
+            android:text="@string/author" />
+
+        <CheckBox
+            android:id="@id/book_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5.0dip"
+            android:button="@drawable/custom_checkbox"
+            android:focusable="false"
+            android:gravity="top"
+            android:paddingLeft="7.0dip"
+            android:paddingRight="3.0dip" />
+    </RelativeLayout>
+
+</LinearLayout>

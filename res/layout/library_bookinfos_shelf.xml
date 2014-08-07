@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/book_bloc_item_list"
+    android:layout_width="@dimen/bookShelfThumbWidth"
+    android:layout_height="@dimen/bookShelfHeight"
+    android:clickable="false"
+    android:paddingBottom="@dimen/bookShelfBottomMargin"
+    android:paddingTop="@dimen/bookShelfTopMargin" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/bookShelfThumbWidth"
+        android:layout_height="@dimen/bookShelfThumbHeight" >
+
+        <ImageView
+            android:id="@id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="center"
+            android:src="@drawable/no_cover" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/ThumbnailMediumTitle"
+            android:layout_alignBottom="@id/icon" />
+
+        <ImageView
+            android:id="@id/format"
+            style="@style/BookFormat"
+            android:layout_alignBottom="@id/icon"
+            android:layout_alignRight="@id/icon" />
+    </RelativeLayout>
+
+</LinearLayout>

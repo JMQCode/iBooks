@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_black">#FF000000</color>
+    <color name="outline_background">#BB000000</color>
+    <color name="list_item_color_android2">#FF000000</color>
+    <color name="font_white"> #FFFFFFFF</color>
+    <color name="font_black">#ff000000</color>
+    <color name="font_yellow">#FFD700</color>
+    <color name="font_orangered">#FF7256</color>
+    <color name="font_blue_night">#ff5779a7</color>
+    <color name="white">#ffffffff</color>
+    <color name="titlebackgroundcolor">#ff000000</color>
+    <color name="titletextcolor">#ffffffff</color>
+    <color name="readerDialogText">#ff000000</color>
+    <color name="readerDialogItemSubTitle">#ff727171</color>
+    <color name="themeActionBarDarkColor">#ff303030</color>
+    <color name="themeActionBarLightColor">#ff636161</color>
+    <color name="tabsBackgroundStart">#ff464646</color>
+    <color name="tabsBackgroundEnd">#ff000000</color>
+    <color name="themeGalerieTitleColor">#ff71950b</color>
+    <color name="themeLightColor">#ffb3ea0a</color>
+    <color name="themeMediumColor">#ff93c00c</color>
+    <color name="themeMediumDarkColor">#ff89b30d</color>
+    <color name="okButtonStart">#ff649316</color>
+    <color name="okButtonEnd">#ffa1d10f</color>
+    <color name="toolbarScrollColor">#ff97c511</color>
+    <color name="toolbarButtonColor">#ffffffff</color>
+    <color name="header_title_start">#ff629518</color>
+    <color name="header_title_end">#ff9cca10</color>
+    <color name="category_header_start">#ff85b514</color>
+    <color name="category_header_end">#ff689b18</color>
+    <color name="collections_item_edit_start">#fff4f5ef</color>
+    <color name="collections_item_edit_end">#ffe7efcf</color>
+    <color name="pressed_list_selected_light_start">#ffcbf059</color>
+    <color name="pressed_list_selected_light_end">#ffa9d622</color>
+    <color name="toolbar_background_selector_start">#ff7b9603</color>
+    <color name="toolbar_background_selector_end">#ff668d00</color>
+    <color name="popup_toolbar_background_selector_start">#ff7b9603</color>
+    <color name="popup_toolbar_background_selector_end">#ff668d00</color>
+    <color name="popup_list_item_start">#ff7a9d07</color>
+    <color name="popup_list_item_center">#ff9cbe08</color>
+    <color name="popup_green_list_item_start">#ffa0d313</color>
+    <color name="popup_green_list_item_center">#7f588212</color>
+    <color name="popup_green_background_start">#ff6a9c17</color>
+    <color name="popup_green_background_center">#ff9abc08</color>
+    <color name="popup_green_background_end">#ff94c311</color>
+    <color name="quickaction_button_background_start">#ffb3ea0a</color>
+    <color name="quickaction_button_background_end">#ff89b30d</color>
+
+</resources>

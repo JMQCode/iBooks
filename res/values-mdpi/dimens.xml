@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="bookShelfTopMargin">15.0dip</dimen>
+    <dimen name="bookShelfBottomMargin">20.0dip</dimen>
+    <dimen name="bookShelfHeight">137.0dip</dimen>
+    <dimen name="bookShelfThumbWidth">65.0dip</dimen>
+    <dimen name="bookShelfThumbHeight">102.0dip</dimen>
+    <dimen name="bookShelfLeftMargin">19.0dip</dimen>
+    <dimen name="bookShelfRightMargin">19.0dip</dimen>
+
+</resources>

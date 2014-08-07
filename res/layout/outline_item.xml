@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    style="@style/BookmarkItem"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@id/treeview_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:src="@drawable/treeview_go" />
+
+    <LinearLayout
+        android:id="@id/treeview_collapse"
+        android:layout_width="48.0px"
+        android:layout_height="48.0px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@id/treeview_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="marquee"
+        style="@style/ItemTitle"
+        android:gravity="left|center_vertical" />
+
+</LinearLayout>

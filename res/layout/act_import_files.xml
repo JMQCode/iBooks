@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/read_bg_5" >
+
+    <TextView
+        android:id="@id/path_text"
+        style="@style/HeaderTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_title_background"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@id/filelist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/operation_panel"
+        android:layout_below="@id/path_text"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1dip" />
+
+    <LinearLayout
+        android:id="@id/operation_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/toolbar_background"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@id/library_synchronize_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/toolbar_button_selector"
+            android:drawableTop="@drawable/toolbar_import"
+            android:textColor="@android:color/white"
+            android:text="@string/explorer_import"
+            android:textSize="12.0dip" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/gotopageView"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:layout_gravity="center">
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="top"
+		android:layout_gravity="center"
+		android:baselineAligned="true">
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:id="@+id/pageNumberTextEdit"
+			android:minEms="4"
+			android:numeric="integer"
+			android:inputType="number"
+			android:layout_marginLeft="4dip"
+			android:layout_marginRight="2dip"
+			android:layout_marginTop="4dip"
+			android:layout_marginBottom="2dip" />
+		<Button
+			android:text="@string/button_goto_page"
+			android:id="@+id/goToButton"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:ellipsize="marquee"
+			android:layout_marginLeft="2dip"
+			android:layout_marginRight="4dip"
+			android:layout_marginTop="4dip"
+			android:layout_marginBottom="2dip" />
+	</LinearLayout>
+	<SeekBar
+		android:id="@+id/seekbar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:layout_marginLeft="4dip"
+		android:layout_marginRight="4dip"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="2dip" />
+	<Button
+		android:layout_gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="true"
+		android:id="@+id/bookmarkHeader"
+		android:gravity="center_vertical"
+		android:text="@string/bookmarks_title"
+		android:layout_marginLeft="2dip"
+		android:layout_marginRight="2dip"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="4dip" />
+	<ListView
+		android:id="@+id/bookmarks"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="4dip"
+		android:layout_marginRight="4dip"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="4dip" />
+</LinearLayout>
+

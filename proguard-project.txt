@@ -1,0 +1,197 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+
+-keepclassmembers class com.greenlemonmobile.app.ebook.books.views.WebReader$WebReaderBridge {
+   public *;
+}
+
+-dontwarn com.google.ads.**
+
+-keepclassmembers class org.chm4j.ChmEntry {
+	*;
+}
+
+-keepclassmembers class org.chm4j.ChmFile {
+	*;
+}
+
+-keepclassmembers class com.greenlemonmobile.app.ebook.ndk.NDKInitialize {
+   *;
+}
+
+-keepclassmembers class org.ebookdroid.common.bitmaps.RawBitmap {
+	*;
+}
+-keepclassmembers class org.ebookdroid.droids.djvu.codec.DjvuContext {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.droids.djvu.codec.DjvuDocument {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.droids.djvu.codec.DjvuPage {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.droids.djvu.codec.DjvuOutline {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.core.codec.CodecPageInfo {
+	*;
+}
+
+-keep public class org.ebookdroid.core.codec.CodecPageInfo
+
+-keepclassmembers class org.ebookdroid.core.codec.PageLink {
+	*;
+}
+
+-keep public class org.ebookdroid.core.codec.PageLink
+
+-keepclassmembers class org.ebookdroid.core.codec.PageTextBox {
+	*;
+}
+
+-keep public class org.ebookdroid.core.codec.PageTextBox
+
+-keepclassmembers class org.ebookdroid.core.codec.OutlineLink {
+	*;
+}
+
+-keep public class org.ebookdroid.core.codec.OutlineLink
+
+-keepclassmembers class org.ebookdroid.droids.mupdf.codec.MuPdfDocument {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.droids.mupdf.codec.MuPdfPage {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.droids.mupdf.codec.MuPdfLinks {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.droids.mupdf.codec.MuPdfOutline {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.core.VScrollController {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.core.HScrollController {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.core.SinglePageController {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.ui.viewer.viewers.BaseView {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.ui.viewer.viewers.SurfaceView {
+	*;
+}
+
+-keepclassmembers class org.ebookdroid.ui.viewer.ViewerActivityController {
+	public *;
+}
+
+-keepclassmembers class org.ebookdroid.ui.viewer.ViewerActivity {
+	public *;
+}
+
+-keepclassmembers class org.ebookdroid.ui.viewer.dialogs.GoToPageDialog {
+	public *;
+}
+
+-keep public class * extends org.ebookdroid.common.touch.IMultiTouchListener
+
+-keep public class org.ebookdroid.common.touch.IMultiTouchListener
+
+-keep public class org.ebookdroid.common.touch.MultiTouchGestureDetectorFactory
+
+-keepclasseswithmembers public class org.ebookdroid.common.touch.MultiTouchGestureDetector {
+	public <init>(org.ebookdroid.common.touch.IMultiTouchListener);
+}
+
+#renanme Source File name to Lebook then keep linenumber of source file
+-renamesourcefileattribute iBooks
+-keepattributes SourceFile,LineNumberTable
+
+
+#copy from ${sdk.dir}\tools\proguard\proguard-android.txt
+-keepattributes *Annotation*
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgent
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.app.Fragment
+-keep public class * extends android.app.Fragment
+-keep public class com.android.vending.licensing.ILicensingService
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keep public class * extends android.view.View {
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+    public void set*(...);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+# The support library contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version.  We know about them, and they are safe.
+-dontwarn android.support.**

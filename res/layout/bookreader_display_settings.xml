@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingTop="8.0dip" >
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@id/epub_settings_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="4.0dip"
+                android:paddingTop="4.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <Button
+                        android:id="@id/bookreader_align_left"
+                        style="@style/DisplaySettingsButton"
+                        android:drawableLeft="@drawable/toolbar_align_left"
+                        android:onClick="onClick" />
+
+                    <Button
+                        android:id="@id/bookreader_align_right"
+                        style="@style/DisplaySettingsButton"
+                        android:drawableLeft="@drawable/toolbar_align_right"
+                        android:onClick="onClick" />
+
+                    <Button
+                        android:id="@id/bookreader_align_center"
+                        style="@style/DisplaySettingsButton"
+                        android:drawableLeft="@drawable/toolbar_align_center"
+                        android:onClick="onClick" />
+
+                    <Button
+                        android:id="@id/bookreader_align_justified"
+                        style="@style/DisplaySettingsButton"
+                        android:drawableLeft="@drawable/toolbar_align_justified"
+                        android:onClick="onClick" />
+                </LinearLayout>
+
+                <View style="@style/PopupVerticalSeparator" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <Button
+                        android:id="@id/bookreader_lineheight_smaller"
+                        style="@style/DisplaySettingsButton"
+                        android:layout_marginRight="13.0dip"
+                        android:drawableLeft="@drawable/toolbar_lineheight_smaller"
+                        android:onClick="onClick" />
+
+                    <Button
+                        android:id="@id/bookreader_lineheight_larger"
+                        style="@style/DisplaySettingsButton"
+                        android:layout_gravity="right"
+                        android:drawableLeft="@drawable/toolbar_lineheight_larger"
+                        android:onClick="onClick" />
+                </LinearLayout>
+
+                <View style="@style/PopupVerticalSeparator" />
+
+                <LinearLayout
+                    android:id="@id/font_panel_epub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <Button
+                        android:id="@id/bookreader_smaller_font_btn_epub"
+                        style="@style/DisplaySettingsButton"
+                        android:layout_marginRight="13.0dip"
+                        android:drawableLeft="@drawable/popup_smaller_font"
+                        android:onClick="onClick" />
+
+                    <Button
+                        android:id="@id/bookreader_larger_font_btn_epub"
+                        style="@style/DisplaySettingsButton"
+                        android:layout_gravity="right"
+                        android:drawableLeft="@drawable/popup_larger_font"
+                        android:onClick="onClick" />
+                </LinearLayout>
+
+                <View style="@style/PopupVerticalSeparator" />
+
+                <Button
+                    android:id="@id/screen_orientation_epub"
+                    style="@style/DisplaySettingsButton"
+                    android:layout_gravity="right"
+                    android:drawableLeft="@drawable/toolbar_orientation"
+                    android:onClick="onClick" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@id/settings_dialog_ok"
+        style="@style/TextualButtonClose"
+        android:layout_marginTop="11.0dip"
+        android:layout_marginBottom="11.0dip"
+        android:background="@drawable/button_ok_background_selector"
+        android:onClick="onClick"
+        android:text="@string/close" />
+
+</LinearLayout>

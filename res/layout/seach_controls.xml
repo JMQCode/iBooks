@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/searchbar"
+    style="@style/SearchPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@id/search_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="2dip"
+        style="@style/PanelCloseButton" />
+
+    <Button
+        android:id="@id/search_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/search_close"
+        android:layout_gravity="center"
+        android:layout_marginRight="2dip"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/header_search_next" />
+
+    <Button
+        android:id="@id/search_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="2dip"
+        android:layout_toLeftOf="@id/search_next"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/header_search_previous" />
+
+    <EditText
+        android:id="@id/search_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/search_previous"
+        android:layout_alignTop="@id/search_previous"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_toLeftOf="@id/search_previous"
+        android:gravity="center"
+        android:imeOptions="actionSearch"
+        android:singleLine="true" />
+
+</RelativeLayout>

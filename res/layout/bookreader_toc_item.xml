@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/toc_item_layout"
+    style="@style/BookmarkItem"
+    android:gravity="left|center"
+    android:orientation="horizontal"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    android:paddingLeft="@dimen/dialogListPadding"
+    android:paddingRight="@dimen/dialogListPadding" >
+
+    <TextView
+        android:id="@id/treeview_item_title"
+        style="@style/BookmarkItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:text="@string/title"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@id/treeview_item_page"
+        style="@style/BookmarkItemSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:paddingLeft="4.0dip"
+        android:text="@string/page_number"
+        android:visibility="gone" />
+
+</LinearLayout>

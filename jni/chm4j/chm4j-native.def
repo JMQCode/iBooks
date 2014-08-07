@@ -1,0 +1,3 @@
+EXPORTS
+Java_org_chm4j_ChmFile_entries
+Java_org_chm4j_ChmEntry_readContent

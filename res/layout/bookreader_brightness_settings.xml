@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingTop="8.0dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@id/bookreader_bright_down_btn_epub"
+                style="@style/DisplaySettingsButton"
+                android:layout_marginRight="13.0dip"
+                android:drawableLeft="@drawable/toolbar_bright_down"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@id/bookreader_bright_up_btn_epub"
+                style="@style/DisplaySettingsButton"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/toolbar_bright_up"
+                android:onClick="onClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@id/settings_dialog_ok"
+        style="@style/TextualButtonClose"
+        android:layout_marginTop="11.0dip"
+        android:layout_marginBottom="11.0dip"
+        android:background="@drawable/button_ok_background_selector"
+        android:text="@string/close"
+        android:onClick="onClick" />
+
+</LinearLayout>

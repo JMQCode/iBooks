@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="@color/popup_list_item_start" android:endColor="@color/popup_list_item_start" android:angle="90.0" android:centerColor="@color/popup_list_item_center" />
+        </shape>
+    </item>
+</layer-list>
